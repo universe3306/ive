@@ -314,7 +314,7 @@ sub{
 .caption {
     display: block;
     position: fixed;
-    top: 70%;
+    bottom: 8%;
     left: 60%;
     z-index: 99999;
     
@@ -569,7 +569,6 @@ figure {
         
 .footer{
     margin: 0 4vw 0 7vw;
-
  }
 
 .footerbox {
@@ -579,7 +578,7 @@ figure {
     z-index: 99999;
     list-style: none;
     color: white;
-    
+
 }
 
 
