@@ -11,7 +11,16 @@
 /*--- Global Style --*/
 
 body {
-background-color: #ffcd00;#0a70ff
+background-color:  #ffe01b ; 
+
+mailchimp yellow #ffe01b 
+jay-z yellow #ffcd00 
+few blue #2577fc
+
+}
+
+body .bgcolor {
+background-color:  white!important; 
 }
 
 
@@ -45,38 +54,61 @@ sub{
 
 
 
+
+
+
+
+
+
+
+/*---------------------------------------- GLOBAl NAVIGATION ----------------------------------------*/
+
+
+
+
 /*--- 메인 로고 --*/
 
 .main-logo {
+    display: block;
     position: fixed;
-    left: 2%;
-    top: 5%;
-    margin-top: 5px;
-    height: 20px; 
+    left: 5%;
+    top: 30px; 
     z-index: 99999;
 }
 
+
+.logobox {
+    display: block;
+    
+    width: 10vw;
+    list-style: none;
+    color: white;
+}
+
+
 .navbar-brand {
+    /*--- 얘는 a 태그임 --*/
     display: block;
     position: relative;
     align-items: center;
     width: auto; 
-    margin: 1px auto 1px auto;
 }
+
+
+
 
 .logo {
-    width: 11rem; /* 로고 크기 */ 
+    width: 16vw; /* 로고 크기 */ 
     margin: 0 auto; 
     display: block;
-    padding: 1px;
 
+    padding: 0.5rem 1rem;
+    margin: 4px 8px;
+
+    text-align: center;
+
+    float: center;
 }
-
-
-
-
-
-
 
 
 
@@ -86,19 +118,17 @@ sub{
 .small-menu {
     display: block;
     position: fixed;
-    width: auto;
     right: 5%;/*--- 여기로 위치 조정하시오 --*/
-    top: 7%;/*--- 여기로 위치 조정하시오 --*/
-    z-index: 99999;
+    top: 6vw;/*--- 여기로 위치 조정하시오 --*/
+    z-index: 99998;
+    
     margin: 4px;
+    width: auto;
 }
 
 
 .small {
-    left: 20%;/*--- 여기 말고--*/
-    top: 30%;/*--- 여기 말고--*/
     display: block;
-    z-index: 99999;
     list-style: none;
     color: white;
     
@@ -108,20 +138,21 @@ sub{
 .small-item {
     display: inline;
 
+    width: auto;
+    height: 1.8vw;
+    padding: 0.5rem 1rem;
+    margin: 4px 8px;
+
     font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 800;
     letter-spacing: 0.075em;
     text-transform: uppercase;
 
-    margin: 4px 8px;
     text-align: center;
-    float: left;
 
-    width: auto;
-    height: 1.8rem;
-    padding: 0.5rem 1rem;
-    
+    float: center;
+
     background-color: white; 
     border: black 0.09rem solid;
 }
@@ -130,7 +161,7 @@ sub{
 .small-item a,
 .small-item a:link,
 .small-item a:focus{
-    vertical-align: middle;
+
     color: white;
     text-shadow:
     -1px -1px 0 #000,  
@@ -150,7 +181,7 @@ sub{
 
 
 
-
+/*---------------------------------------- HOME.html ----------------------------------------*/
 
 
 
@@ -237,40 +268,100 @@ sub{
 
 .nav-text a:hover,
 .nav-text a:focus {
-    color: yellow;
+    color: none;
     text-decoration: overline underline;
+}
+
+
+.mint a:hover{
+    color: #66ff9e;
+    text-decoration: overline underline;
+    text-decoration-color: white;
+}
+
+
+.orange a:hover{
+    color: #f25f25;
+    text-decoration: overline underline;
+    text-decoration-color: white;
+}
+
+.sky a:hover{
+    color: #c5dbf2;
+    text-decoration: overline underline;
+    text-decoration-color: white;
+}
+
+.pink a:hover{
+    color: #ff32bf;
+    text-decoration: overline underline;
+    text-decoration-color: white;
+}
+
+.green a:hover{
+    color: #007c89;
+    text-decoration: overline underline;
+    text-decoration-color: white;
 }
 
 
 
 
 
+/*--- CAPTIONS --*/
 
 
+.caption {
+    display: block;
+    position: fixed;
+    top: 70%;
+    left: 60%;
+    z-index: 99999;
+    
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: #66ff9e;
+    text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
 
 
 
 
 /*--- HOW TO 텍스트 --*/
 
+
 .info {
+    display: block;
     position: fixed;
-    top: 83%;
-    left: 2%;
-    height: 20px;
-    z-index: -1;
+    top: 67%;
+    right: 60%;
+
+    z-index: -1!important;
+}
+
+
+
+.infobox {
+
+    position: relative;
+    float: center;
+
+    width: auto;
+    align-items: center;
+    margin: 5vw auto 1px 10%;
 }
 
 .infobox {
     display: block;
-    position: relative;
-    align-items: center;
-    width: auto;
-    margin: 1px auto 1px auto;
 }
 
 .infotext {
-    
     display: block;
     width: auto; 
     margin: 0 auto; 
@@ -295,7 +386,7 @@ sub{
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
     line-height: 1.7rem;
-    color: white; #dd8100
+    color: white;
     text-shadow:
     -1px -1px 0 #000,  
     1px -1px 0 #000,
@@ -306,33 +397,19 @@ sub{
 .info a:hover,
 .info a:focus {
     text-decoration: none;
-    color: #dd8100;
+    color: white;
 }
 
 
 
+.highlight {
 
-
-
-
-.info {
-    display: block;
-    position: fixed;
-    top: 83%;
-    right: 60%;
-    height: 20px;
-    z-index: -1;
 }
 
-
-
-.infobox {
-    display: flex;
-    position: relative;
-    float: center;
-    align-items: center;
-    width: auto;
+.black {
+    color: #ff7777;
 }
+
 
 .infobox img {
     position: fixed;
@@ -349,9 +426,16 @@ sub{
 
     max-width: 50px;
     max-height: 50px;
+    
     background-image: 
     url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDA4IDQwOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDA4IDQwODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJmb3J3YXJkIj4KCQk8cG9seWdvbiBwb2ludHM9IjIwNCwxMDIgMjA0LDAgNDA4LDIwNCAyMDQsNDA4IDIwNCwzMDYgMCwzMDYgMCwxMDIgICAiIGZpbGw9IiNEODAwMjciLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K)
 }
+
+
+
+
+
+
 
 
 
@@ -366,8 +450,17 @@ sub{
 
 .blankbox {
     width: 80px;
-    height: 400px;
-    margin: 700px auto 200px auto;
+    height: 0px;
+    margin: 900px auto 400px auto;
+    position: relative;
+    display: block;
+}
+
+
+.blankbox-short {
+    width: 80px;
+    height: 2vw;
+    margin: 10px auto ;
     position: relative;
     display: block;
 }
@@ -383,6 +476,7 @@ sub{
 .content-thumb {
     width: 80%;
     margin: 200px auto 200px auto;
+    z-index: 99998;
 }
 
 
@@ -470,10 +564,68 @@ figure {
 
 
 
-/*--- 푸터 --*/
+/*-- 푸터 --*/
+
+        
+.footer{
+    margin: 0 4vw 0 7vw;
+
+ }
+
+.footerbox {
+    left: 20%;/*--- 여기 말고--*/
+    top: 30%;/*--- 여기 말고--*/
+    display: block;
+    z-index: 99999;
+    list-style: none;
+    color: white;
+    
+}
 
 
-.small-text {
+.footer-item {
+    display: inline;
+
+    font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+
+    margin: 4px 8px;
+    text-align: left;
+    float: left;
+
+    width: auto;
+    height: 1.8rem;
+    padding: 0.5rem 1rem;
+    
+    background-color: white; 
+    border: black 0.09rem solid;
+}
+
+
+.footer-item a,
+.footer-item a:link,
+.footer-item a:focus{
+
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.footer-item a:hover,
+.footer-item a:focus {
+    color: red;
+    text-decoration: ;
+}
+
+
+
+ .small-text { 
     display: inline;
 
     font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
@@ -507,7 +659,7 @@ figure {
 
 
 
-/*--- BG --*/
+/*-- BG --*/
 
 
 .bg {
@@ -515,3 +667,91 @@ figure {
     background-repeat:no-repeat;
     background-size:cover;
 }
+
+
+
+
+
+
+/*---------------------------------------- CONTACT.html ----------------------------------------*/
+
+
+/*--- 컨텐츠 시작 전 블랭크박스 --*/
+
+
+
+
+
+
+
+/*--- 메인 텍스트 --*/
+
+
+.contact {
+    display: block;
+    z-index: 99999;
+    list-style: none;
+    color: white;
+    
+
+}
+
+
+.contactbox {
+    display: flex;
+    position: relative;
+    float: center;
+    align-items: center;
+    background-color: white;
+}
+
+
+.contacttext {
+    
+    display: inline-flexs;
+    width: auto; 
+    padding: 10% 10% ;
+    
+    text-align: left;
+
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    
+    font-size: 2vw;
+    line-height: 3vw;
+    color: Black; #dd8100
+    
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+
+.contact-big-title {
+    font-size: 2.5vw;
+}
+
+.contact a {
+  
+    color: yellow; #dd8100
+
+}
+
+.contact a:hover,
+.contact a:focus {
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
